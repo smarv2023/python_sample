@@ -3,7 +3,7 @@ You should try to replicate their functionality using what you have learnt about
 
 # Input a Python list of student heights
 
-#student_heights = input().split()
+# student_heights = input().split()
 
 student_heights = "192 150 160 200"
 student_heights = student_heights.split()
