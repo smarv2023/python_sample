@@ -2,7 +2,12 @@
 You should try to replicate their functionality using what you have learnt about for loops.'''
 
 # Input a Python list of student heights
-student_heights = input().split()
+
+#student_heights = input().split()
+
+student_heights = "192 150 160 200"
+student_heights = student_heights.split()
+
 for n in range(0, len(student_heights)):
     student_heights[n] = int(student_heights[n])
 # 🚨 Don't change the code above 👆
