@@ -86,7 +86,6 @@ while not end_of_game:
 
     # Then reduce 'lives' by 1.
     # If lives goes down to 0 then the game should stop and it should print "You lose."
-
     # Join all the elements in the list and turn it into a String.
     print(f"{' '.join(display)}")
 
@@ -94,7 +93,7 @@ while not end_of_game:
     if "_" not in display:
         end_of_game = True
         print("You win.")
-
+    # Check if user does not have life left
     if life < 0:
         end_of_game = True
         print("You lose")
