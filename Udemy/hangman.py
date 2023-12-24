@@ -1,4 +1,3 @@
-
 import random
 
 stages = ['''
@@ -84,7 +83,6 @@ while not end_of_game:
     else:
         print(f"{stages[life]}")
         life -= 1
-
 
     # Then reduce 'lives' by 1.
     # If lives goes down to 0 then the game should stop and it should print "You lose."
