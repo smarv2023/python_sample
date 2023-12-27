@@ -24,7 +24,7 @@ while convert:
         num = float(num)
     except ValueError:
         print("Sorry %s is not a price" % num)
-        #print(f"Sorry {num} is not a number")
+        # print(f"Sorry {num} is not a number")
         continue
     else:
         print("Thank you")
