@@ -42,4 +42,4 @@ while not end_of_game:
     print(f"{stages[life]}")
     if life == 0:
         end_of_game = True
-        print("You lose")
+        print(f'You lose, the word is: "{chosen_word}"')
