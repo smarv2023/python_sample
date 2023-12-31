@@ -1,4 +1,3 @@
-import os
 
 from art import logo
 
@@ -7,22 +6,22 @@ print("Welcome to the secret auction program.")
 bidding_log = []
 
 
-def bidding_phase(name, bid):
+def bidding_phase(new_name, new_bid):
     new_bid = {
-        "name": name,
-        "bid": bid
+        "name": new_name,
+        "bid": new_bid
     }
     bidding_log.append(new_bid)
 
 
-def winner_phase(bidding_log):
-    highest_bid = 0
-    winner = ""
-    for check_bid in bidding_log:
-        if check_bid["bid"] > highest_bid:
-            highest_bid = check_bid["bid"]
-            winner = check_bid["name"]
-    return winner, highest_bid
+def winner_phase(bidding):
+    highest_bidder = 0
+    winner_name = ""
+    for check_bid in bidding:
+        if check_bid["bid"] > highest_bidder:
+            highest_bidder = check_bid["bid"]
+            winner_name = check_bid["name"]
+    return winner_name, highest_bidder
 
 
 bidding = True
