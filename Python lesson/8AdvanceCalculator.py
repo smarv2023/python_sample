@@ -18,9 +18,9 @@ run = True
 def performMath():
     global run
     global previous
-    #equation = ''
+    # equation = ''
     if previous == 0:
-        equation = input('Enter equation: ')
+        equation = input('Enter number operation number example(1+1): \n')
     else:
         equation = input(str(previous))
 
@@ -34,7 +34,7 @@ def performMath():
         else:
             previous = eval(str(previous) + equation)
 
-        #print('You typed', previous)
+        # print('You typed', previous)
 
 
 while run:
